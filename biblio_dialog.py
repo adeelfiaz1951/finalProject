@@ -27,6 +27,7 @@ class biblioteca(ventana):
     autor_id = self.autor_id_entry.get()
 
     crear_libro = Libro.nuevo_libro(isbn,titulo, autor_id)
+    crear_libro = DataManager.anadir_libro(isbn,titulo, autor_id)
 
     if crear_libro:
         messagebox.INFO("Correcto", "Libro creado")
