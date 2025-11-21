@@ -247,28 +247,38 @@ class DataManager:
         self.conexion.close()
 
 
-# ----------------------------------------------
-# CLASES MODELO
-# ----------------------------------------------
-class Autor:
-    def __init__(self, autor_id, nombre):
-        self.autor_id = autor_id
-        self.nombre = nombre
 
 
-class Libro:
-    def __init__(self, isbn, titulo, autor_id, genre, anio_publicacion):
-        self.isbn = isbn
-        self.titulo = titulo
-        self.autor_id = autor_id
-        self.genre = genre
-        self.anio_publicacion = anio_publicacion
+# # ----------------------------------------------
+# # CLASES MODELO
+# # ----------------------------------------------
+# class Autor:
+#     def __init__(self, autor_id, nombre):
+#         self.autor_id = autor_id
+#         self.nombre = nombre
 
 
-class Prestamo:
-    def __init__(self, id_prestado, isbn_libro, nombre_usuario, fecha_prestado, fecha_devolucion=None):
-        self.id_prestado = id_prestado
-        self.isbn_libro = isbn_libro
-        self.nombre_usuario = nombre_usuario
-        self.fecha_prestado = fecha_prestado
-        self.fecha_devolucion = fecha_devolucion
+# class Libro:
+#     def __init__(self, isbn, titulo, autor_id, genre, anio_publicacion):
+#         self.isbn = isbn
+#         self.titulo = titulo
+#         self.autor_id = autor_id
+#         self.genre = genre
+#         self.anio_publicacion = anio_publicacion
+
+
+#     def anadir_libro(self, isbn, titulo, autor_id, genre, anio_publicacion):
+
+#         nuevo = DataManager.anadir_libro(isbn, titulo, autor_id, genre, anio_publicacion)
+
+
+
+
+
+# class Prestamo:
+#     def __init__(self, id_prestado, isbn_libro, nombre_usuario, fecha_prestado, fecha_devolucion=None):
+#         self.id_prestado = id_prestado
+#         self.isbn_libro = isbn_libro
+#         self.nombre_usuario = nombre_usuario
+#         self.fecha_prestado = fecha_prestado
+#         self.fecha_devolucion = fecha_devolucion
